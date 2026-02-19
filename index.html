@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boutros Chaaya</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <link rel="stylesheet" href="./assets/CSS/media.css" />
+  </head>
+  <body>
+    <!-- Barre de navigation pour pc -->
+    <nav id="desktop-nav">
+      <div class="logo">Boutros Chaaya</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Barre de navigation pour mobile -->
+    <nav id="mobile-nav">
+      <div class="logo">Boutros Chaaya</div>
+      <div class="mobile-menu">
+        <div class="mobile-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <!-- Chaque lien de menu a pour fonction onclick toggleMenu() fait en javascript -->
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- Chaque section represente une "page" du portfolio -->
+    <section id="profile">
+      <!-- Photo de profile -->
+      <div class="section__pic-container">
+        <img src="./assets/imgs/about-pic.jpg" alt="Boutros Chaaya" />
+      </div>
+      <!-- Text description -->
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Boutros Chaaya</h1>
+        <p class="section__text__p2">Game Designer/Developper</p>
+        <!-- Boutons pour telecharger cv et aller directement a la page contact -->
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/imgs/Cv_BoutrosChaaya_fr.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <!-- Icons liens vers les resaux sociaux -->
+        <div id="socials-container">
+          <img
+            src="./assets/imgs/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/boutros-chaaya-177232257/'"
+          />
+          <img
+            src="./assets/imgs/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/boutros-chaaya'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+           <!-- Autre photo profile symbolique -->
+          <img
+            src="./assets/imgs/profile-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <!-- Icons pour montrer les achevements -->
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <!-- Details et experience -->
+              <img
+                src="./assets/imgs/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3+ years Programming</p>
+              <p>2+ years Game Development</p>
+            </div>
+            <!-- Educaiton / Derniers diplomes obtenus -->
+            <div class="details-container">
+              <img
+                src="./assets/imgs/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Foundation Degree LUDUS Académie<br /></p>
+            </div>
+          </div>
+          <!-- Text description -->
+          <div class="text-container">
+            <p>
+              Born and raised in Beirut, Lebanon, I am a Developer with expertise in game development, Python, and C#. Having recently completed a Bachelor's degree in Game Design, I am passionate about crafting engaging experiences and thrive in collaborative, innovative environments that foster creativity and growth.
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Icon qui permet de descendre a la prochaine section -->
+      <!-- <img
+        src="./assets/imgs/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      /> -->
+    </section>
+    <!--Blocs montrant competences et niveaux  -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/imgs/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/imgs/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/imgs/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/imgs/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/imgs/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/imgs/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Game Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/imgs/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Csharp</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/imgs/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Unity</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/imgs/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+              
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/imgs/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pygame</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/imgs/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Icon qui permet de descendre a la prochaine section -->
+      <!-- <img
+        src="./assets/imgs/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      /> -->
+    </section>
+    <!-- Section montrant les projets avec un lien vers la repo-->
+    <section id="projects">
+      <p class="section__text__p1">Browse my recent</p>
+      <h1 class="title">Projects</h1>
+      <br/>
+      <div class="project-container">
+        <div class="project-details-container">
+          <div class="project-items">
+            
+            <!-- Project 1: Kitchen Simulator -->
+            <div class="project-card">
+              <div class="project-image-container">
+                <img
+                  src="./assets/imgs/kitchensimulator.png"
+                  alt="Project 1"
+                  class="project-image"
+                />
+              </div>
+              <h2 class="project-card-title">Kitchen Simulator</h2>
+              <p>
+                A complete simulator 3d game made with Csharp and Unity. Highlights key game design elements, numerous player interactions and animation.
+              </p>
+              <div class="project-btn-container">
+                <button
+                  class="btn btn-color-1"
+                  onclick="window.open('https://github.com/boutros-chaaya/', '_blank')"
+                >
+                  Github
+                </button>
+                
+                <a href="https://github.com/boutros-chaaya/Boutros-Chaaya-Portfolio/releases/download/v1.0.0/KitchenSimulator.zip" class="download-button">>
+                </a>
+
+                
+                </button>
+              </div>
+            </div>
+            <!-- End of Project 1 -->
+    
+            <!-- Project 2: Platformer -->
+            <div class="project-card">
+              <div class="project-image-container">
+                <img
+                  src="./assets/imgs/typeracer.png"
+                  alt="Project 2"
+                  class="project-image"
+                />
+              </div>
+              <h2 class="project-card-title">TypeRacer</h2>
+              <p>
+                Typing educational game. This 2d classic runner game teaches you how to memorise each key of the keyboard and learn to type faster !
+              </p>
+              <div class="project-btn-container">
+                <button
+                  class="btn btn-color-1"
+                  onclick="window.open('https://github.com/boutros-chaaya/pygame-typing-jumping-game', '_blank')"
+                >
+                  Github
+                </button>
+                <a href="https://github.com/boutros-chaaya/Boutros-Chaaya-Portfolio/releases/download/v1.0.0/TypeRacer.zip" class="download-button">>
+                </a>
+              </div>
+            </div>
+            <!-- End of Project 2 -->
+    
+            <!-- Project 3: Snake -->
+            <div class="project-card">
+              <div class="project-image-container">
+                <img
+                  src="./assets/imgs/snake.png"
+                  alt="Project 3"
+                  class="project-image"
+                />
+              </div>
+              <h2 class="project-card-title">Snake</h2>
+              <p>
+                Classic Snake Game. Made with python and pygame.
+              </p>
+              <div class="project-btn-container">
+                <button
+                  class="btn btn-color-1"
+                  onclick="window.open('https://github.com/boutros-chaaya/pygame-snake', '_blank')"
+                >
+                  Github
+                </button>
+                <a href="https://github.com/boutros-chaaya/Boutros-Chaaya-Portfolio/releases/download/v1.0.0/Snake.zip" class="download-button">>
+                </a>
+              </div>
+            </div>
+            <!-- End of Project 3 -->
+    
+            <!-- Project 4: Sudoku Solver -->
+            <div class="project-card">
+              <div class="project-image-container">
+                <img
+                  src="./assets/imgs/sudokusolver.png"
+                  alt="Project 4"
+                  class="project-image"
+                />
+              </div>
+              <h2 class="project-card-title">Sudoku Solver</h2>
+              <p>
+                I made a Sudoku solver using backtracking algorythm. You will need python installed on your machine to run this file.
+              </p>
+              <div class="project-btn-container">
+                <button
+                  class="btn btn-color-1"
+                  onclick="window.open('https://github.com/boutros-chaaya/python-sudoku-solover', '_blank')"
+                >
+                  Github
+                </button>
+                <a href="https://github.com/boutros-chaaya/Boutros-Chaaya-Portfolio/releases/download/v1.0.0/SudokuSolver.zip" class="download-button">>
+                </a>
+              </div>
+            </div>
+            <!-- End of Project 4 -->
+    
+            <!-- Project 5: WPM Typing Speed Test -->
+            <div class="project-card">
+              <div class="project-image-container">
+                <img
+                  src="./assets/imgs/typingspeedtest.png"
+                  alt="Project 5"
+                  class="project-image"
+                />
+              </div>
+              <h2 class="project-card-title">WPM Typing Speed Test</h2>
+              <p>
+                Clone of the famous "Typeracer". This application gives you a random sentence and measures your typing speed in Words per Minute.
+              </p>
+              <div class="project-btn-container">
+                <button
+                  class="btn btn-color-1"
+                  onclick="window.open('https://github.com/boutros-chaaya/python-wpm-typing-speed-test', '_blank')"
+                >
+                  Github
+                </button>
+                <a href="https://github.com/boutros-chaaya/Boutros-Chaaya-Portfolio/releases/download/v1.0.0/TypingTest.zip" class="download-button">>
+                </a>
+              </div>
+            </div>
+            <!-- End of Project 5 -->
+    
+            <!-- Project 6: Platformer -->
+            <div class="project-card">
+              <div class="project-image-container">
+                <img
+                  src="./assets/imgs/platformer.png"
+                  alt="Project 6"
+                  class="project-image"
+                />
+              </div>
+              <h2 class="project-card-title">Platformer</h2>
+              <p>
+                Platformer game with multiple levels increasing in difficulty. Made with a level creator in pygame.
+              </p>
+              <div class="project-btn-container">
+                <button
+                  class="btn btn-color-1"
+                  onclick="window.open('https://github.com/boutros-chaaya/pygame-platformer', '_blank')"
+                >
+                  Github
+                </button>
+                <a href="https://github.com/boutros-chaaya/Boutros-Chaaya-Portfolio/releases/download/v1.0.0/Platformer.zip" class="download-button">>
+                </a>
+              </div>
+            </div>
+            <!-- End of Project 6 -->
+    
+            <!-- Project 7: Shooter -->
+            <div class="project-card">
+              <div class="project-image-container">
+                <img
+                  src="./assets/imgs/shooter.png"
+                  alt="Project 7"
+                  class="project-image"
+                />
+              </div>
+              <h2 class="project-card-title">Shooter</h2>
+
+              <p>
+                Shooter game with jumping, shooting and grenades mecanics. Play vs ai. 
+              </p>
+
+              <div class="project-btn-container">
+                <button
+                  class="btn btn-color-1"
+                  onclick="window.open('https://github.com/boutros-chaaya/pygame-shooter', '_blank')"
+                >
+                  Github
+                </button>
+                <a href="https://github.com/boutros-chaaya/Boutros-Chaaya-Portfolio/releases/download/v1.0.0/Shooter.zip" class="download-button">>
+                </a>
+              </div>
+            </div>
+            <!-- End of Project 7 -->
+
+            <!-- Project 8 -->
+            <div class="project-card">
+              <div class="project-image-container">
+                <img
+                  src="./assets/imgs/fibonacci.png"
+                  alt="Project 7"
+                  class="project-image"
+                />
+              </div>
+              <h2 class="project-card-title">Fibonacci Clock</h2>
+
+              <p>
+                A Fibonacci clock tells time by using colored blocks to represent hours and minutes based on the Fibonacci sequence, To read the hour, simply add up the corresponding values of the red and blue squares. To read the minutes, do the same with the green and blue squares. The minutes are displayed in 5 minute increments (0 to 12) so you have to multiply your result by 5 to get the actual number.where each blocks value is summed to determine the time. In this example it is 10:20
+              </p>
+
+              <div class="project-btn-container">
+                <button
+                  class="btn btn-color-1"
+                  onclick="window.open('https://github.com/boutros-chaaya/python-fibonacci-clock', '_blank')"
+                >
+                  Github
+                </button>
+                <a href="https://github.com/boutros-chaaya/Boutros-Chaaya-Portfolio/releases/download/v1.0.0/FibonacciClock.zip" class="download-button">>
+                </a>
+              </div>
+            </div>
+            <!-- End of Project 8 -->
+
+              <!-- Project 9 -->
+              <div class="project-card">
+                <div class="project-image-container">
+                  <img
+                    src="./assets/imgs/bataille.png"
+                    alt="Project 7"
+                    class="project-image"
+                  />
+                </div>
+                <h2 class="project-card-title">Bataille Card Game</h2>
+
+                <p>
+                  Card game inspired by "bataille". Each card has a attack value and defense value. If you're attack is highger than enemy defense, you win !
+                </p>
+                
+                <div class="project-btn-container">
+                  <button
+                    class="btn btn-color-1"
+                    onclick="window.open('https://github.com/boutros-chaaya/gymbro', '_blank')"
+                  >
+                    Github
+                  </button>
+                  <a href="https://github.com/boutros-chaaya/Boutros-Chaaya-Portfolio/releases/download/v1.0.0/Bataille.zip" class="download-button">>
+                  </a>
+                </div>
+              </div>
+              <!-- End of Project 9 -->
+
+             <!-- Project 10 -->
+             <div class="project-card">
+              <div class="project-image-container">
+                <img
+                  src="./assets/imgs/hangman.png"
+                  alt="Project 7"
+                  class="project-image"
+                />
+              </div>
+              <h2 class="project-card-title">Hangman Game</h2>
+
+              <p>
+                Classic hangman game made with python. 
+              </p>
+              
+              <div class="project-btn-container">
+                <button
+                  class="btn btn-color-1"
+                  onclick="window.open('https://github.com/boutros-chaaya/', '_blank')"
+                >
+                  Github
+                </button>
+                <a href="https://github.com/boutros-chaaya/Boutros-Chaaya-Portfolio/releases/download/v1.0.0/Hangman.zip" class="download-button">>
+                </a>
+              </div>
+            </div>
+            <!-- End of Project 10 -->
+            
+          <!-- Project 10 -->
+          <div class="project-card">
+            <div class="project-image-container">
+              <img
+                src="./assets/imgs/gymbro.jpg"
+                alt="Project 7"
+                class="project-image"
+              />
+            </div>
+            <h2 class="project-card-title">Gymbro Workout App</h2>
+
+            <p>
+              I was the front end developper on this workout buddy project, and helped develop it with Javascript and the ReactJs library mainly. You will need NodeJs installed and the command : npm start, to run this app.
+            </p>
+            
+            <div class="project-btn-container">
+              <button
+                class="btn btn-color-1"
+                onclick="window.open('https://github.com/boutros-chaaya/gymbro', '_blank')"
+              >
+                Github
+              </button>
+              <a href="https://github.com/boutros-chaaya/Boutros-Chaaya-Portfolio/releases/download/v1.0.0/Gymbro.zip" class="download-button">>
+              </a>
+            </div>
+          </div>
+          <!-- End of Project 10 -->
+
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section id="contact">
+      <!-- Page contact! -->
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/imgs/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:boutros.chaaya@gmail.com">boutros.chaaya@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/imgs/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/boutros-chaaya-177232257/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer avec barre de nav et text -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Made by Boutros Chaaya in 2024.</p>
+    </footer>
+    
+    <!-- scrooll to top button -->
+    <button id="scroll-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">↑</button> 
+    
+    <script src="assets/JavaScript/script.js"></script>
+  </body>
+</html>
